@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | e-Bus Pass</title>
+    <link
+      rel="shortcut icon"
+      href="https://dtcpass.delhi.gov.in/images/DTC1.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <nav>E- Bus Pass</nav>
+    <div class="quick">
+      <hr class="divider bg-madison hr-sm-left-0" />
+      <div id="image">
+        <table
+          class="table table-bordered"
+          style="width: 100%; border: 10px"
+          background="images/Dtc.jpeg"
+        >
+          <tbody>
+            <tr>
+              <td class="heading" colspan="4">
+                <h5 class="text-center"><u>DTC And Cluster Bus Pass</u></h5>
+              </td>
+            </tr>
+            <tr>
+              <td class="details-td" colspan="4">
+                <img class="profile-image" src="Photo 50kb.jpg" />
+                <br />
+                <label class="name"><b>VINEET SINGH NEGI</b></label
+                ><br />
+                <label class="name"><b>Student All route AC/Non AC</b></label
+                ><br />
+                <label class="pass-number"
+                  ><b>Bus Pass No. </b
+                  ><b id="blink" style="opacity: 0">710403846308</b></label
+                ><br />
+                <script type="text/javascript">
+                  var blink = document.getElementById("blink");
+                  setInterval(function () {
+                    blink.style.opacity = blink.style.opacity == 0 ? 2 : 0;
+                  }, 1000);
+                </script>
+                <label class="validation"
+                  ><b>Valid from 10/07/2024 to 10/10/2024</b></label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="signature" colspan="2">
+                <img src="sign.jpg" height="80px" width="80px" />
+              </td>
+              <td class="qr-code" colspan="2">
+                <img src="dtc-qr-code.png" alt="" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <p class="barnd-name text-ubold" style="color: black">
+        <b>Copyright © - Delhi e-Governance Society</b>&nbsp;<span
+          id="copyright-year"
+          >2024</span
+        >
+      </p>
+    </footer>
+  </body>
+</html>
